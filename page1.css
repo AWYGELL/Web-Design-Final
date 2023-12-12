@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Source+Code+Pro:wght@300;400&display=swap');
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Source Code Pro", monospace;
+}
+
+#sketchContainer {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #FF3B39;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #FFFB7D;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #0551BA;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #4AFFC6;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: #7CA44C;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+#typewriter {
+    overflow: hidden; 
+    border-right: .15em solid #ffffff;
+    white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: .15em;
+}
+
+#imageChoices {
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px; 
+    align-items: center;
+}
+
+#leftLink,
+#rightLink {
+    text-decoration: none; 
+    color: #333; 
+}
+
+#leftLink img,
+#rightLink img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out; 
+    margin-left: 25px;
+}
+
+#leftLink:hover img,
+#rightLink:hover img {
+    transform: scale(1.1);
+}
+
+

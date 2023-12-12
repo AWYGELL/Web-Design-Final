@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+    background-color: #000000;
+}
+
+#resultContainer {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #f0f0f0;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+#scoreDisplay {
+    margin: 20px 0;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

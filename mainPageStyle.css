@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Source+Code+Pro:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.vox-cdn.com/thumbor/QcosXorzlq6XFe6FYHY2UgBTSN8=/0x0:2000x1294/1920x0/filters:focal(0x0:2000x1294):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21958908/JJang_201014_1047_ImaginingFuture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.glitch {
+   position: absolute;
+   font-size: 150px;
+   font-weight: bold;
+   color: #121212;
+   letter-spacing: 2px;
+   z-index: 1;
+   top: 0%;
+   left: 27%;
+    opacity: 0.8;
+   font-family: "Orbitron",sans-serif;
+}
+
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.glitch:before {
+   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #fffefa;
+   z-index: -1;
+   opacity: 1;
+}
+
+.glitch:after {
+   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #030ff7;
+   z-index: -2;
+   opacity: 1;
+}
+
+
+@keyframes glitch-it {
+   0% {
+      transform: translate(0);
+   }
+   20% {
+      transform: translate(-4px, 4px);
+   }
+   40% {
+      transform: translate(-4px, -4px);
+   }
+   60% {
+      transform: translate(4px, 4px);
+   }
+   80% {
+      transform: translate(4px, -4px);
+   }
+   to {
+      transform: translate(0);
+   }
+}
+
+#effect {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.row {
+    padding: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.row2 {
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: auto;
+    text-align: center;
+    margin-bottom: 100px;
+    background-image: url("https://bostonglobe-prod.cdn.arcpublishing.com/resizer/3eaEc_h3lQVi63wqTz16ZBEeACQ=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/O6U5RLNTEBGZCS2NZYU3LYDSWM.JPEG");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 100px;
+}
+
+.row3 h2{
+    margin-top: 10px;
+    max-width: 60%;
+    font-family: "Orbitron",sans-serif;
+    color: #fcfcfc;
+    font-weight: bold;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.row3 p{
+    margin-top: 10px;
+    max-width: 70%;
+    font-family: "Source Code Pro", monospace;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.row2-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px #6a6a6a;
+    width: 20%;
+    font-size: 50px;
+    font-family: "Source Code Pro", monospace;
+}
+
+
+.heading {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-left: 250px;
+    margin-right: 50px;
+    font-family: "Orbitron",sans-serif;
+    font-weight: 900;
+}
+
+.paragraph {
+    font-family: "Source Code Pro", monospace;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-right: 250px;
+}
+
+/* Add a class for colored spans */
+.colored-span {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px; 
+    margin: 2px;
+}
+
+/* glitch effect reference : https://www.cssportal.com/css-glitch-text-effect/*/
