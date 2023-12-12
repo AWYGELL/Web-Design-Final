@@ -8,3 +8,5 @@
 #### 3. https://www.jpl.nasa.gov/galleries/visions-of-the-future
 #### Contents:
 #### 1. https://www.pcmag.com/how-to/how-to-detect-ai-created-images
+
+#### Link to the website: https://awygell.github.io/Web-Design-Final/
